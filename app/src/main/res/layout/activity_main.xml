@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvWaiter1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvWaitTime1"
+        tools:text="WAITER"/>
+
+    <TextView
+        android:id="@+id/tvWaitTime1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvWaiter1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TIME"/>
+
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pbWaiter1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvWaiter1"/>
+
+    <TextView
+        android:id="@+id/tvWaiter2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/pbWaiter1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvWaitTime2"
+        tools:text="WAITER"/>
+
+    <TextView
+        android:id="@+id/tvWaitTime2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/pbWaiter1"
+        app:layout_constraintStart_toEndOf="@id/tvWaiter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TIME"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pbWaiter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvWaiter2"/>
+
+    <TextView
+        android:id="@+id/tvWaiter3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/pbWaiter2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvWaitTime3"
+        tools:text="WAITER"/>
+
+    <TextView
+        android:id="@+id/tvWaitTime3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/pbWaiter2"
+        app:layout_constraintStart_toEndOf="@id/tvWaiter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TIME"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pbWaiter3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvWaiter3"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_button"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
