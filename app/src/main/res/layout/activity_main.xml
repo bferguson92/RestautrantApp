@@ -13,7 +13,6 @@
         app:layout_constraintHorizontal_weight="0.5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvWaitTime1"
         tools:text="WAITER"/>
 
@@ -23,7 +22,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintHorizontal_weight="0.5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvWaiter1"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="TIME"/>
